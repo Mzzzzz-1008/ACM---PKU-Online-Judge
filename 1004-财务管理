@@ -1,0 +1,19 @@
+#include<iostream>
+#include <iomanip> 
+
+using namespace std;
+
+int main(){
+	int k = 0;
+	float b = 0;
+	float a[12];
+	cout<<fixed<<setprecision(2);
+	
+	while(k < 12){
+		cin >> a[k];
+		b = b + a[k];
+		k++;
+	}
+	cout << "$" << b/12 <<endl;  //注意$后面没有空格
+	return 0;
+ } 
